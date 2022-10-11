@@ -1,0 +1,21 @@
+.testimonial-text {
+    width: 50%;
+    background-color: #FFFAF9;
+    padding: 100px 0px;
+}
+.testimonial-content {
+    position: absolute;
+    left: 10%;
+    max-width: 432px;
+    width: 100%;
+    display: flex;
+    height: initial;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+}
+.testimonial-text h2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

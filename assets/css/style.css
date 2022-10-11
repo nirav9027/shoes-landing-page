@@ -1,0 +1,1867 @@
+body{
+    margin: 0;
+    font-family: 'Russo One';
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../fonts/RussoOne-Regular.eot');
+    src: url('../fonts/RussoOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RussoOne-Regular.woff2') format('woff2'),
+        url('../fonts/RussoOne-Regular.woff') format('woff'),
+        url('../fonts/RussoOne-Regular.ttf') format('truetype'),
+        url('../fonts/RussoOne-Regular.svg#RussoOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rockstar';
+    /* src: url('/fonts/Rockstar-ExtraBold.otf'); */
+    src: url('../fonts/Rockstar-ExtraBold.otf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One';
+}
+.container{
+    max-width: 1550px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-fluid{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1 , h2 , h3 , h4 ,p{
+    margin: 0;
+    padding: 0;
+  
+}
+h1 , h2{
+    font-family: 'Rockstar';
+    font-weight: 800;
+}
+img{
+    max-width: 100%;
+}
+
+/* --------------------------- header css ------------------------ */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: #000000;
+    padding: 30px 0;
+    position: relative;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    display: inline-block;
+    padding: 15px 22px;
+}
+.navbar li a{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+a{
+    transition: 0.3s ease-in-out;
+}
+.navbar li a:hover{
+    color:#F1362C;
+}
+.checkbtn{
+    color: #FFFFFF;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+ }
+li .nav-contact-btn{
+    display: none;
+    margin: 0 auto;
+} 
+.gradiant-btn{
+    padding: 12px 28px;
+    background: linear-gradient(to right,#FF7E0A,#F1362C);
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Russo One';
+    border: 1px solid #F1362C;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+ .gradiant-btn:hover{
+    transition: 0.3s  ease-in-out;
+}
+.contact-btn{
+    margin-left: 25px;
+    transition: 0.3s;
+}
+.gradiant-btn:hover{
+    border: 1px solid #F1362C;
+    background: transparent;
+}
+.nav-btns li a{
+    font-size: 25px;
+}
+.nav-btns li a:hover{
+    color: #F1362C;
+}
+.nav-btns li{
+   margin-right: 40px;
+    list-style: none;
+}
+.nav-btns li a{
+    color: #FFFFFF;
+}
+.nav-btns{
+    display: flex;
+    align-items: center;
+}
+.mobile-toggle{
+    display: none;
+}
+.search-form .input-text{
+    padding: 12px;
+    display: none;
+    border-radius: 4px;
+     border: none;
+  }
+.search-form {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.search-form:hover  .input-text{
+    position: absolute;
+    width: 300px;
+    right: 375px;
+    display:block;
+}
+/* ----------------------- banner css-----------------------  */
+
+.banner::before{
+    content: '';
+    top: -30px;
+    left: 0px;
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    filter: blur(200px);
+}
+.banner{
+    background-color: #000000;
+    color: #FFFFFF;
+    position: relative;
+}
+.banner .row{
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 80px;
+}
+.banner-text{
+    width: 50%;
+    max-width: 900px;
+    padding-top: 60px;
+}
+h1{
+    font-size: 120px;
+     font-weight: 800;
+    line-height: 114px;
+   
+} 
+h1 span{
+    font-family: 'Rockstar';
+    font-weight: 800;
+}
+span{
+    background: linear-gradient(to right, #FF7E0A 0%, #F1362C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-text p{
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+.banner-img{
+    width: 50%;
+    position: relative;
+}
+.banner-img::before {
+    content: '';
+    position: absolute;
+    background: url('../images/NIKE.png');
+    background-position: center;
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.review{
+    border: 1px solid rgba(255, 255, 255,25%);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 9px;
+    position: relative;
+}
+.review span{
+    color: #F1362C;
+    border-right: 0.83px solid #FFFFFF;
+    margin-right: 5px;
+    padding-right: 10px;
+    font-size: 29px;
+}
+.star-rate{
+ margin-bottom: 10px;
+ font-size: 22px;
+}
+
+.star-rate .fa-star{
+    Color: #FFD600;    
+    padding: 0 3px;
+}
+.review p{
+    font-size: 22px;
+    font-weight: 400;
+}
+.vector-img {
+    position: absolute;
+    left: 130px;
+    top: 110px;
+}
+.main-banner-img img{
+    position: relative;
+    width: 100%;
+    margin-left: -100px;
+    margin-top: -80px;
+    margin-bottom: -70px;
+
+}
+
+.offer{
+    float: right;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    max-width: 365px;
+    padding: 15px 19px 23px 23px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.offer a{
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.offer p{
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+.circle-shape{
+    background:#FF7E0A;
+    padding: 25px;
+    border-radius: 50%;
+    width: 30px;
+    position: absolute;
+    bottom: -155px;
+    right: -10px;
+}
+.offer-box{
+    position: relative;
+    margin-top: -65px;
+}
+.triangle-shape{
+    position: absolute;
+    right: 325px;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 55px solid #FF7E0A;
+    border-bottom: 30px solid transparent;
+    transform: rotate(350deg);
+  }
+
+  /* ---------------------- products css ----------------------*/
+
+  .products{
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  h2{
+    font-size: 64px;
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 76px;
+    font-family: 'Rockstar';
+    font-weight: 800;
+    
+  }
+  h2 span{
+    font-family: 'Rockstar';
+    font-weight: 800;
+  }
+
+
+  /*----------------------- product-slider css  ------------------- */
+
+  .product-slider{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin:  0 -15px;
+  }
+  .product-items , .product-img{
+    border-radius: 10px;
+  }
+  .product-items {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0,0.1);
+    width: 357px; 
+    background-color: #FFFFFF;
+    margin: 0 15px;
+  }
+  .bg-pink{
+    background: #FF6160;
+  }
+  .bg-yellow{
+    background-color: #FFC634;  
+  }
+  .bg-sky{
+    background-color: #25BEC7;
+  }
+  .bg-green{
+    background-color: #82ED5F;
+  }
+  .product-content{
+    padding: 20px 32px 20px 20px;
+  }
+  .product-content span{
+    display: block;
+    font-size: 36px;
+    margin-top: 5px;
+    margin-bottom: 11px;
+  }
+  .product-content a{
+    font-size: 25px;
+    color: #000000;
+    font-weight: 300;
+  }
+  .rating{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+  .rating .fa-star{
+    color: #FFD600;
+    padding: 0 3px;
+  }
+  .rating h4{
+    color: #000000;
+    margin-left: 10px;
+    letter-spacing: 1px;
+
+  }
+  .view-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .view-details a{
+    font-size: 18px;
+  }
+  .view-details a:hover{
+    color: #F1362C;
+  }
+  .view-details span {
+    padding-top: 6px;
+}
+
+
+/* ------------------- about css ----------------------*/
+.about{
+    background-color: #000000;
+    position: relative;
+    padding-bottom: 65px;
+}
+.about-text::before{
+    content: '';
+    top: 30px;
+    right: 0px;
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    filter: blur(200px);
+}
+.about .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+}
+/* .col-6{
+    position: relative;
+} */
+/* .col-6::before{
+    content: '';
+    position: absolute;
+    width: 550px;
+    background-image: url('../images/nikebg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    height: 350px;
+    top: -10%;
+    left: 0;
+} */
+.about-main-img img{
+    position: relative;
+    z-index: 1;
+    margin-left: -125px;
+}
+.about-main-img::before{
+    position: absolute;
+    content: '';
+    background: url('../images/bgimg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 468px;
+    height: 468px;
+    margin-top: 90px;
+}
+.nike-img img{
+   position: absolute;
+   top: 30px;
+   left: 0;
+}
+.col-6{
+    width: 60%;
+}
+.col-6 .offer {
+    margin-top: -240px;
+    margin-right: 240px;
+    position: relative;
+    width: 248px;
+    padding: 14px;
+}
+.col-6 .offer a{
+    font-size: 24px;
+}
+.col-6 .offer p{
+    font-size: 16px;
+}
+.offer .vector img {
+    position: absolute;
+    top: -140px;
+    left: 110px;
+}
+.about-text{
+    width: 40%;
+    color: #FFFFFF;
+}
+.about-text span{
+    font-size: 30px;
+}
+.about-text h2{
+    /* font-size: 64px; */
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 80px
+}
+.about-text h2 span{
+    font-size: 64px;
+    text-transform: uppercase;
+    
+}
+.about-text p{
+    font-size: 24px;
+    color: #ACACAC;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+/* -------------------product-details css---------------------- */
+
+.product-details{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.product-details span{
+    font-size: 30px;
+}
+.product-text{
+    max-width: 620px;
+}
+.product-text h2{
+    font-size: 64px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 80px
+}
+.product-text h2 span{
+    font-size: 64px;
+    text-transform: uppercase;  
+}
+.product-text p{
+    font-size: 24px;
+    color: #666666;
+}
+.quality-shoes{
+    margin-top: 43px;
+    display: flex;
+}
+.product-text .prize-img{
+        background-image: url('../images/rectangle-img.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 77px !important;
+        max-width: 100%;
+        height: 77px !important;
+        max-height: 100%;
+        padding: 22px;
+}
+
+.best-prizing{
+    display: flex;
+    margin-top:36px;
+}
+.right-text{
+    margin-left: 22px;
+}
+.right-text h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.product-right-img img {
+    margin-right: 150px;
+    margin-top: 90px;
+}
+.product-right-img{
+    background-image: url('../images/product-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}  
+.bg-nike {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/* ------------------  testimonial  ----------------------- */
+
+/* .testimonial-text img {
+    margin-top: 164px;
+    margin-left: 160px;
+  
+} */
+
+/* .testimonial-text {
+    background-color: #FFFAF9;
+    width: 50%;
+    height: 842px;
+    position: relative;
+} */
+
+
+.testimonial-text {
+    width: 50%;
+    background-color: #FFFAF9;
+    padding: 100px 0px;
+}
+.wrapper-content {
+    width: 775px;
+    float: right;
+    max-width: 100%;
+    position: relative;
+}
+.testimonial-content {
+    position: absolute;
+    left: 3%;
+    max-width: 432px;
+    width: 100%;
+    display: flex;
+    height: initial;
+    align-items: center;
+}
+.testimonial-text h2{
+    position: absolute;
+    left: 0;
+    top: 35%;
+    line-height: 80px;
+}
+.testimonial-text h2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.testimonial-slider{
+    width: 50%;
+    background: linear-gradient(to right, #FF7E0A 0%, #F1362C 100%);
+    position: relative;
+}
+
+.testimonial-box{
+    /* width: 745px !important; */
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 50px ;
+    margin-right: 30px;
+}
+
+.client-info{
+    display: flex;
+    align-items: center;
+}
+.client-img img {
+    width: 125px;
+    height: 125px;
+}
+
+.client-name {
+    margin-left: 25px;
+}
+
+.client-name h3{
+    font-size: 36px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 33px;
+    margin-top: 44px;
+}
+
+.client-name  .fa-star:last-child{
+    color: #D8D8D8;
+}
+
+.slider-box{
+    margin-top: 200px;
+    margin-left: -210px;
+    display: flex;
+    margin-bottom: 200px;
+}
+
+
+
+/* ---------------------footer --------------------- */
+
+
+footer{
+    background-color: #000000;
+    padding-top: 100px;
+    position: relative;
+}
+footer::after{
+    content: '';
+    bottom: -75px;
+    left: 0px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+    background-repeat: no-repeat;
+    opacity: 1;
+    filter: blur(150px);
+}
+.contact {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contact h3{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 135%;
+}
+.contact input[type=text]{
+    width: 517px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 10px;
+    padding: 28px 40px;
+}
+.contact i.fa.fa-envelope-o {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 15px;
+    color: #B2B2B2;
+}
+.contact .subscribe-btn{
+    margin-left: 30px;
+    padding: 28px 40px;
+    
+}
+.contact .subscribe-btn:hover{
+    color:#FF7E0A;
+}
+.footer-data{
+    margin-top: 50px;
+    color: #FFFFFF;
+}
+.social-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links ul li{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links li a{
+    color: #FFFFFF;
+} 
+.social-links ul li:hover{
+    background-color: #F1362C;
+}
+
+.social-links{
+    display: flex;
+    margin-top: 40px;
+}
+.right-info{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-links{
+    margin-left: 80px;
+}
+.footer-links a{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s ease;
+
+}
+.footer-links a:hover{
+    color: #F1362C;
+   
+}
+.footer-links li{
+    margin-bottom: 20px;
+}
+.footer-links h3{
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.footer-links h3:hover{
+    color: #F1362C;
+}
+.footer-links .fa{
+    margin-right: 10px;
+}
+footer .container{
+    border-bottom: 1px solid rgba(255, 255, 255,0.25);
+    padding-bottom: 20px;
+}
+.copyright{
+    background-color: #000000;
+    color: rgba(255, 255, 255,0.25);;
+    text-align: center;
+    padding: 30px 0;
+}
+.quote-img img{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+}
+
+/* -------slider arrow --------------------------------------------------------------------------- */
+
+a.prev-arrow , a.next-arrow{
+    background-color: none;
+    border: 1px solid #00000040;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+.product-slider a.prev-arrow {
+    right: 92px;
+    top: -138px;
+}
+.product-slider a.next-arrow{
+    right: 15px;
+    top: -138px;
+}
+a.prev-arrow i, a.next-arrow i{
+    font-size: 30px;
+}
+a.prev-arrow:hover ,a.next-arrow:hover{
+    background-color: #F1362C;
+    border: 1px solid #F1362C;
+}
+a.prev-arrow:hover i{
+    color: #000000;
+}
+a.next-arrow i {
+    color: #000000;
+}
+a.prev-arrow:hover a.next-arrow i{
+    color: #00000040;
+}
+a.prev-arrow i {
+    color: #00000040;
+}
+.testimonial a.prev-arrow{
+    top: 70%;
+    left: -540px;
+}
+.testimonial a.next-arrow.slick-arrow {
+    top: 70%;
+    left: -473px;
+}
+
+/* ------------------------------responsive ---------------------------------- */
+
+@media screen and (max-width : 1440px) {
+    
+     /* banner  */
+
+     h1 {
+        font-size: 110px;
+        }
+        h2{
+            font-size: 60px;
+        }
+        .vector-img {
+            top: 135px;
+            left: 70px;
+        }
+        .banner-text{
+            max-width: 550px;
+        }
+        .banner-text p {
+            font-size: 26px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+        .main-banner-img img{
+            margin-top: 0;
+        }
+        .offer-box {
+            margin-top: 20px;
+        }
+        .circle-shape{
+            bottom: -155px;
+        }
+        .search-form:hover .input-text{
+            right: 200px;
+        }
+    
+        /* product slider  */
+    
+        .product-content a {
+            font-size: 20px;
+        }
+        .view-details a {
+            font-size: 18px;
+        }
+        .product-content span{
+            font-size: 30px;
+        }
+    
+        /* about  */
+    
+        .col-6 .offer {
+            margin-top: -185px;
+            margin-right: 100px;
+        }       
+    
+        /* product details */
+        .product-text h2{
+            font-size: 60px;
+        }
+        .product-right-img img{
+            margin-right: 140px;
+        }
+        .product-text {
+            max-width: 590px;
+        }
+        .bg-nike {
+            right: -340px;
+        }
+        
+        /* testimonial   */
+    
+        .client-name{
+            margin-left: 10px;
+        }
+        .client-name h3 {
+            font-size: 22px;
+        }
+        .testimonial {
+            padding:0;
+        } 
+        .testimonial-box {
+            padding: 30px;
+        }
+       
+        .testimonial-box p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 15px;
+        }
+        .slider-box {
+            margin-left: -170px;
+            margin-top: 170px;
+        }
+    
+        /* contact  */
+    
+        .contact h3{
+            font-size: 30px;
+        }
+        .contact input[type=text]{
+            max-width: 100%;
+            width: 380px;
+    
+        }
+}
+
+@media screen  and (max-width: 1300px) {
+
+    /* banner  */
+    .banner::before{
+        content: '';
+        top: -30px;
+        left: 0px;
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        filter: blur(200px);
+    }
+    .main-banner-img img{
+        margin-left: 0;
+    }
+    .vector-img {
+        left: 120px;
+    }
+    .offer-box {
+        margin-top: 50px;
+    }
+    .navbar li {
+        display: inline-block;
+        padding: 15px 18px;
+    }
+    /* product  slider*/
+
+    .products{
+        padding: 100px 0;
+    }
+    .product-content a {
+        font-size: 18px;
+    }
+    .view-details a {
+        font-size: 16px;
+    }
+
+    /* about  */
+
+    .about-text {
+        margin-top: 80px
+    }
+    .offer .vector img {
+        top: -125px;
+    }
+    .col-6 .offer {
+        margin-top: -155px;
+    }
+    .about-text h2 ,  .product-details h2{
+        line-height: 65px;
+    }
+    /* product details  */
+    .product-text{
+        max-width: 500px;
+    }
+    .product-details{
+        padding: 100px 0;
+    }
+    .product-text , .product-right-img{
+        width: 50%;
+    }
+    .product-right-img img{
+        margin-left: -50px;
+    }
+    .bg-nike {
+        right: -383px;
+        top: -60px;
+    }
+
+    .best-prizing .right-text , .quality-shoes .right-text {
+        margin-left: 10px;
+    }
+
+    /* testimonial  */
+   
+    .testimonial-content img {
+        width: 250px;
+    }
+    .testimonial-text h2 {
+        /* top: 28%; */
+        line-height: 65px;
+    }
+    /* contact  */
+    .contact input[type=text] {
+        max-width: 100%;
+        width: 340px;
+    }
+    .contact .subscribe-btn {
+        margin-left: 10px;  
+    }
+}
+
+@media screen  and (max-width: 1200px){
+    /* header  */
+    .navbar li {
+        padding: 15px 12px;
+    }
+    .fa-search {
+        margin-left: 10px;
+    }
+    h2 , .about-text h2 ,.about-text h2 span ,
+    .product-text h2 ,.product-text h2 span{
+        font-size: 55px;
+    }
+    /* banner  */
+
+    .banner-text p {
+        font-size: 22px;
+    }
+    .offer-box {
+        margin-top: 70px;
+    }
+    /* product  */
+
+    .product-content a {
+        font-size: 20px;
+    }
+  
+    /* about  */
+
+    .about-text p{
+        font-size: 20px;
+    }
+    .col-6 .offer {
+        margin-top: -120px;
+    }
+    .about-main-img img{
+        margin-left: -115px;
+    }
+    /* product details  */
+    .bg-nike {
+        left: 0;
+        top: 35px;
+    }
+    .product-text {
+        max-width: 480px;
+        z-index: 1;
+    }
+    .product-right-img{
+        background-size: contain;
+    }
+
+    /* testimonial  */
+    .slider-box {
+        margin-left: -120px
+    }
+    .client-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .testimonial-box {
+        padding: 20px;
+    }
+    .testimonial-box p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contact h3 {
+        font-size: 26px;
+    }
+    .contact input[type=text] {
+        max-width: 100%;
+        width: 300px;
+        font-size: 15px;
+        padding: 18px 40px;
+    }
+    .contact .subscribe-btn{
+        padding: 14px 22px;
+    }
+    .contact i.fa.fa-envelope-o{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width : 1023px){
+
+    .banner .row , .product-details .row{
+        flex-direction: column-reverse;
+    }
+    header .contact-btn {
+        padding: 12px 10px;
+        font-size: 16px;
+    }
+    .search-form:hover .input-text {
+        right: 190px;
+        top: 35px;
+        padding: 5px;
+    }
+    .contact-btn {
+        margin-left: 5px;
+    }
+    .navbar li a{
+        font-size: 20px;
+    }
+    .navbar li {
+        padding: 15px 5px;
+    }
+    .fa-search {
+        margin-left: 0;
+    }
+    /* banner  */
+
+    .banner::before{
+        content: '';
+        top: -30px;
+        left: 0px;
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        filter: blur(200px);
+    }
+    .about .row{
+        flex-direction:column;                                                                                    
+    }
+    .banner-img , .banner-text{
+        width: 100%;
+    }
+    .review {
+        margin-top: 50px;
+    }
+    .vector-img {
+        left: 170px;
+        top: 200px;
+    }
+
+    /* product slider  */
+    a.prev-arrow, a.next-arrow{
+        padding: 10 px;
+    }
+    a.prev-arrow i, a.next-arrow i {
+        font-size: 25px;
+    }
+    .product-slider a.prev-arrow{
+        right: 80px;
+        top: -127px;
+    }
+    .product-slider a.next-arrow {
+        right: 15px;
+        top: -127px;
+    }
+
+    /* about  */
+    .about-text , .col-6{
+        width: 100%;
+    }
+    .about-text::before {
+        content: '';
+        top: 30px;
+        right: 0px;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        filter: blur(181px);
+    }
+    /* product  */
+
+    .product-text , .product-right-img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .product-right-img{
+        margin-bottom: 100px;
+    }
+    .product-text p , .about-text p{
+        font-size: 22px;
+    }
+    .product-right-img img{
+        margin-left: 0;
+    }
+    .quality-shoes , .best-prizing{
+        align-items: center;
+    }
+    .quality-shoes p, .best-prizing p{
+        font-size: 20px
+    }
+    .bg-nike {
+        width: 100%;
+        left: 0;
+        top: 8%;
+    }
+
+    /* testimonial  */
+
+    .testimonial{
+        overflow: hidden;
+        height: auto;
+        padding: 0;
+    }
+    .testimonial .row {
+        flex-direction: column;
+    }
+    .testimonial-content{
+        bottom: -160px;
+    }
+    .testimonial-text{
+        width: 100%;
+        padding: 180px 0;
+    }
+     .testimonial-slider {
+        width: 100%;
+        padding-bottom: 50px;
+     }
+    .testimonial-text img{
+        max-width: 280px;  
+    }
+    .testimonial-text h2{
+        top: 60%;
+        font-size: 48px;
+    }
+    .slider-box{
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .quote-img img{
+        right: 2%;
+    }
+
+    /* contact  */
+
+    .contact{
+        display: block;
+    }
+    .contact h3{
+        font-size: 30px;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .contact input[type=text]{
+        max-width: 100%;
+        width: 70%;
+    }
+    .contact .subscribe-btn{
+        padding: 14px 36px;
+    }
+
+    /* footer  */
+    footer::after {
+        content: '';
+        bottom: -75px;
+        left: 0px;
+        position: absolute;
+        width: 130px;
+        height: 200px;
+        background: linear-gradient(90deg, #FF7E0A -15.32%, #F1362C 114.3%);
+        background-repeat: no-repeat;
+        opacity: 1;
+        filter: blur(150px);
+    }
+    .footer-links {
+        margin-left: 20px;
+    }
+    .footer-links a{
+        display: flex;
+        text-align: left;
+    }
+    .social-links li {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width : 900px){
+   
+    /* navigation menu  */
+    /* header  */
+    .banner .row{
+        flex-direction: column-reverse;
+    }
+     .navbar{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        text-align: left;
+        z-index: 2;
+        padding-top: 100px;
+        transition: 0.5s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    body.mobile-open {
+        overflow: hidden;
+    }
+    .navbar li {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-btns li a{
+        font-size: 28px;
+    }
+    .nav-btns li{
+       margin-right: 30px;
+        list-style: none;
+    }
+    .nav-btns{
+        display: flex;
+        margin-right: 50px;
+    }
+    .nav-btns li a{
+        color: #FFFFFF;
+    }
+    li .nav-contact-btn{
+        display: inline-block;
+        z-index: 55;
+        padding: 12px 28px;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .mobile-toggle{
+        display: block;
+    }
+
+    .mobile-open .navbar {
+        opacity: 1;
+        left: 0;
+    }
+
+    /* / Mobile toggle Menu / */
+
+    .mobile-toggle {
+        opacity: 1;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+        position: relative;
+        z-index: 99;
+    }
+
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-toggle .bar1 {
+        top: -3px;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s linear;
+        transition: top 0.2s linear 0.2s, -webkit-transform 0.2s linear;
+        -o-transition: transform 0.2s linear, top 0.2s linear 0.2s;
+        transition: transform 0.2s linear, top 0.2s linear 0.2s;
+        transition: transform 0.2s linear, top 0.2s linear 0.2s, -webkit-transform 0.2s linear;
+    }
+
+    .mobile-toggle .bar3 {
+        top: 3px;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s linear;
+        transition: top 0.2s linear 0.2s, -webkit-transform 0.2s linear;
+        -o-transition: transform 0.2s linear, top 0.2s linear 0.2s;
+        transition: transform 0.2s linear, top 0.2s linear 0.2s;
+        transition: transform 0.2s linear, top 0.2s linear 0.2s, -webkit-transform 0.2s linear;
+    }
+
+    .mobile-open .mobile-toggle .bar1 {
+        top: 0;
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        -ms-transform: rotate(-45deg);
+        -webkit-transition: all 0.2s linear, -webkit-transform 0.2s linear 0.2s;
+        transition: all 0.2s linear, -webkit-transform 0.2s linear 0.2s;
+        -o-transition: all 0.2s linear, transform 0.2s linear 0.2s;
+        transition: all 0.2s linear, transform 0.2s linear 0.2s;
+        transition: all 0.2s linear, transform 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;
+    }
+
+    .mobile-open .mobile-toggle .bar2 {
+        opacity: 0;
+    }
+
+    .mobile-open .mobile-toggle .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -4px);
+        transform: rotate(45deg) translate(-6px, -4px);
+        -ms-transform: rotate(45deg);
+        top: 0;
+        -webkit-transition: all 0.2s linear, -webkit-transform 0.2s linear 0.2s;
+        transition: all 0.2s linear, -webkit-transform 0.2s linear 0.2s;
+        -o-transition: all 0.2s linear, transform 0.2s linear 0.2s;
+        transition: all 0.2s linear, transform 0.2s linear 0.2s;
+        transition: all 0.2s linear, transform 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;
+    }
+    .footer-links a{
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width : 767px) {
+     /* header */
+     .search-form:hover .input-text{
+        width: 150px;
+        top: 40px;
+     }
+     .nav-btns li a{
+        font-size: 25px;
+    }
+    .nav-btns li{
+       margin-right: 30px;
+        list-style: none;
+    }
+    /* banner  */
+  
+    h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .banner-text p {
+        font-size: 20px;
+    }
+    .gradiant-btn{
+        font-size: 20px;
+    }
+    .offer{
+        max-width: 300px;
+        padding: 15px;
+    }
+    .offer a {
+        font-size: 24px;
+    }
+    .offer p{
+        font-size: 18px;
+    }
+    .vector-img {
+        left: 120px;
+        top: 160px;
+    }
+
+    .triangle-shape{
+        right: 260px;
+    }
+    .circle-shape {
+        bottom: -140px;
+    }
+
+    /* product slider  */
+
+    .product-slider a.prev-arrow , .product-slider a.next-arrow{
+        display: none !important;
+    }
+    h2, .about-text h2, .about-text h2 span, .product-text h2, .product-text h2 span {
+        font-size:48px;
+    }
+
+    /* about  */
+    .about-text::before , footer::after , .banner::before{
+        display: none;
+    }
+    
+    .about-main-img::before{
+        width: 350px;
+        height: 350px;
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+    .about-main-img img{
+        margin-left: 0px;
+    }
+    .col-6 .offer {
+        margin-top: 0px;
+        margin-right: 0;
+    }
+    .col-6 .offer p{
+        font-size: 18px;
+    }
+
+    /* product  */
+
+    .product-text p, .about-text p{
+        font-size: 20px;
+    }
+    .bg-nike {
+        top: 65%;
+    }
+
+    /* testimonial */
+   
+    .testimonial-text h2 {
+        top: 45%;
+    }
+    .testimonial-content {
+        left: 3%;
+    }
+    .testimonial-text img{
+        margin-bottom: 50px;
+    }
+    .slider-box{
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .contact h3 {
+        font-size: 22px;
+        letter-spacing: 0px;
+    }
+    .contact input[type=text]{
+        width: 100%;
+    }
+    .contact i.fa.fa-envelope-o {
+        margin-top: 18px;
+    }
+    .contact .subscribe-btn{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .left-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .social-links{
+        margin-top: 0;
+    }
+    .right-info{
+        margin-top: 50px;
+    }
+    .footer-links{
+        margin-left: 5px;
+    }
+    .footer-links a{
+        text-align: left;
+       
+    }
+
+    .copyright p {
+        font-size: 16px;
+    }
+    .social-links ul li {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 479px){  
+    .search-form:hover .input-text{
+        width: 120px;
+        top: 65px;
+        right: 80px;
+     }
+    .nav-btns li a{
+        font-size: 20px;
+    }
+    .nav-btns li{
+       margin-right: 20px;
+    }
+    .nav-btns {
+        margin-right: 50px;
+    }
+    .mobile-toggle{
+        top: 32px;
+    }
+    .gradiant-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    /* banner  */
+    .banner .row{
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+    .banner-text p {
+        font-size: 18px;
+    }
+    .vector-img {
+        left: 60px;
+        top: 135px;
+        width: 60px;
+    }
+    .review p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .review span{
+        font-size: 16px;
+    }
+    .star-rate{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .star-rate .fa-star{
+        padding: 0 1px;
+    }
+    .review {
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .circle-shape {
+        bottom: -110px;
+        padding: 15px;
+        right: -5px;
+    }
+    .offer {
+        max-width: 280px;
+        padding: 10px;
+    }
+    .offer a{
+        font-size: 22px;
+    }
+    .offer p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .triangle-shape {
+        right: 152px;
+        border-top: 15px solid transparent;
+        border-left: 30px solid #FF7E0A;
+        border-bottom: 15px solid transparent;
+    }
+    h2, .about-text h2, .about-text h2 span, .product-text h2,
+     .product-text h2 span , .testimonial-text h2  {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .offer {
+        max-width: 175px;
+        padding: 10px;
+    }
+    .offer a {
+        font-size: 15px;
+    }
+    .offer p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .offer .vector img{
+       width: 60px;
+       top: -95px;
+    }
+    /* about  */
+
+    .about-text span {
+        font-size: 24px;
+    }
+    /* .about-main-img::before {
+        width: 250px;
+        height: 250px;
+        margin-top: 43px;
+        margin-left: 40px;
+    } */
+    .about-main-img::before {
+        width: 240px;
+        height: 240px;
+        max-width: 100%;
+        margin-top: 52px;
+        margin-left: 55px;
+    }
+    .col-6 .offer {
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .col-6 .offer a {
+        font-size: 15px;
+    }
+    .col-6 .offer p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .col-6 .offer {
+        width: 270px;
+    }
+    .about-text span , .product-details span{
+        font-size: 24px;
+    }
+    .about-main-img img {
+        margin-left: -25px;
+    }
+    .offer .vector img {
+        left: 65px;
+    }
+    
+
+    /* product details  */
+
+    .product-text p, .about-text p {
+        font-size: 16px;
+    }
+    .quality-shoes h3, .best-prizing h3{
+        font-size: 20px;
+    }
+    .bg-nike {
+        top: 18%;
+    }
+
+    /* testimonial  */
+    .testimonial-content{
+        left: 6%;
+    }
+    .testimonial-text h2 {
+        top: 40%;
+    } 
+    .client-img img {
+        width: 80px;
+        height: 80px;
+    }
+    .client-name h3 {
+        font-size: 20px;
+    }
+    
+    /* footer  */
+    
+    .social-links li {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .right-info{
+        flex-direction: column;
+    }
+    .footer-links h3 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+    .footer-links a{
+        font-size: 16px;
+    }
+    .footer-links li {
+        margin-bottom: 15px;
+    }
+    .social-links ul li {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin-right:10px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+    
+}
